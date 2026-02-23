@@ -129,7 +129,7 @@ export default function ResurrectPage() {
 						<div className="bg-zinc-900/40 border border-zinc-700/30 rounded-xl p-5 space-y-3">
 							<h3 className="text-white font-semibold text-sm">What happens when you resurrect:</h3>
 							{[
-								{ text: "Collection bridged to Solana via Wormhole NFT Bridge", sponsor: "Sunrise" },
+								{ text: "Collection locked & bridged to Solana via Wormhole NFT Bridge", sponsor: "Sunrise" },
 								{ text: "Gallery deployed with enforced royalties", sponsor: "Exchange Art" },
 								{ text: "Realms DAO created for all holders", sponsor: "Realms" },
 								{ text: "Free revival cNFT airdropped to holders", sponsor: "DRiP" },
