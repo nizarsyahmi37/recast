@@ -3,7 +3,7 @@
 import type { NFTCollection } from "@/lib/types"
 
 import { useState, useEffect, useCallback } from "react"
-import { Skull, Loader2, Search, ArrowLeft, AlertCircle } from "lucide-react"
+import { Skull, Loader2, Search, ArrowLeft, AlertCircle, Lock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CollectionCard } from "@/components/CollectionCard"
@@ -23,7 +23,6 @@ export default function ScanPage() {
 		setWalletAddress("0x71C7656EC7ab88b098defB751B7401B5f6d8976F")
 		setIsConnected(true)
 	}
-	
 
 	const scanCollections = useCallback(async () => {
 		if (!walletAddress) return
@@ -54,11 +53,16 @@ export default function ScanPage() {
 						<ArrowLeft className="w-4 h-4" />
 						<span className="text-sm">Back to RECAST</span>
 					</Link>
-					<div className="flex items-center gap-2">
-						<div className="w-7 h-7 bg-red-950/60 border border-red-800/40 rounded-lg flex items-center justify-center">
-							<Skull className="w-3.5 h-3.5 text-red-400" />
+					<div className="flex items-center gap-4">
+						<Link href="/vault" className="text-sm text-zinc-400 hover:text-white flex items-center gap-1 transition-colors">
+							<Lock className="w-3.5 h-3.5" /> Reclaim Vault
+						</Link>
+						<div className="flex items-center gap-2">
+							<div className="w-7 h-7 bg-red-950/60 border border-red-800/40 rounded-lg flex items-center justify-center">
+								<Skull className="w-3.5 h-3.5 text-red-400" />
+							</div>
+							<span className="font-bold text-lg">RECAST</span>
 						</div>
-						<span className="font-bold text-lg">RECAST</span>
 					</div>
 				</div>
 			</nav>
