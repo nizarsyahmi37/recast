@@ -21,7 +21,7 @@ RECAST is a one-stop resurrection tool for dead Ethereum NFT collections. Creato
 
 ## Live Demo
 
-[https://recastapp.vercel.app](https://recast.vercel.app)
+[https://recastapp.vercel.app](https://recastapp.vercel.app)
 
 ## Track Coverage
 
